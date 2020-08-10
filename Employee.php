@@ -5,12 +5,14 @@ class Employee
     private $id;
     private $name;
     private $basicSalary;
+    private $date;
 
-    public function __construct($id, $name, $basicSalary)
+    public function __construct($id, $name, $basicSalary, $date)
     {
         $this->id = $id;
         $this->name = $name;
         $this->basicSalary = $basicSalary;
+        $this->date = $date;
     }
 
     public function getId()
@@ -26,5 +28,10 @@ class Employee
     public function getBasicSalary()
     {
         return $this->basicSalary;
+    }
+
+    public function getDate()
+    {
+        return $this->date;
     }
 }
